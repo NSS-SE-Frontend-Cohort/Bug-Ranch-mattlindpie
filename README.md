@@ -76,11 +76,11 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > `drovers` is a variable referring to the result returned by the function `hireDrovers`
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > Both the `drover` and `drovers` variables are components of an enhanced `for loop`. `drovers` is an array of drovers that is being iterated through, and `drover` refers to an individual(current) object in that array. 
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > [Your public Loom URL here](https://www.loom.com/share/92157373fe8e47b9abb04157f576a0fe)
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -88,11 +88,17 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > This is an example of a `for loop`. `for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++)` is the loop header, and the code inside is the body. Until a condition in the header is met, the body will continue to execute, and a new "forest" will be added to the journey array with each iteration.
+   
+   Section 1 (let forestNumber = 0;): The variable `forestNumber` starts at 0. 
+   
+   Section 2 (forestNumber < areas.forests;): This is the termination condition. As long as the `forestNumber` is less than the value of `areas.forests`, the loop iterations will continue.
+
+   Section 3 (forestNumber++): the `forestNumber` variable is increased by 1 at the end of each iteration.
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The `database` variable contains several arrays of objects. Since modules can only export one thing, the `database` encapsulates this data, making all of the data able to be exported as one object
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > The `herdSize` variable is an argument that represents the number of cattle to be driven. That number is passed in through `main.js` and its `cattleToDrive` variable
 
 ## When You Are Done
 
