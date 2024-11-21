@@ -7,7 +7,7 @@ const roundup = (herdSize) => {
     for (let counter = 0; counter < herdSize; counter++) {
         const randomType = Math.floor(Math.random() * types.length)
         const animal = types[randomType]
-        cattle.push(animal.breed)
+        cattle.push(animal)
     }
 
     return cattle
